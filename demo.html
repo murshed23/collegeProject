@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+Enter first element<input id="n"><br>
+<button type="button" onclick="fun()">Display</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+function fun()
+{
+var x,s;
+x=document.getElementById("n").value;
+s=parseInt(x)+7;
+document.getElementById("demo1").innerHTML="Value is "+x;
+document.getElementById("demo").innerHTML="Value is "+s;
+}
+</script>
+</body>
+</html>

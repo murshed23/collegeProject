@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<title>Navigation Bar</title>
+<style>
+ul{
+	list-style-type:none;
+	margin:0;
+	padding-bottom: 20px;
+	overflow:hidden;
+	border:1px solid #e7e7e7;
+	background-color:#f3f3f3;
+	position:sticky;
+	top:0;
+}
+li{
+	float:left;
+}
+li a{
+	display:block;
+	color:#666;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+li a:hover:not(.active){
+	background-color:#009879;
+}
+li a:hover{
+color:white;
+background:#009879;
+}
+.dropbtn {
+  background-color: #f3f3f3;
+  color: #666;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 0px;
+}
+
+.drop-con {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:12px 16px;
+  z-index: 1;
+}
+
+.drop-con a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+.drop-con a:hover {background-color: #ddd;}
+
+.dropdown:hover .drop-con {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+
+<body>
+
+<ul>
+	<li><a class="active" href="index.php">Home</a></li>
+	<li><a href="contact.php">Contact us</a></li>
+	<li><a href="about.php">About</a></li>
+	<li><button class="dropdown"><a class="dropbtn">Student</a>
+		<div class="drop-con">
+		<a href="register.php">Register</a>
+		<a href="login.php">Login</a>
+	</div>
+	</button>
+	</li>
+	<li><a href="admin.php">Administrator</a></li>
+
+</ul>
+</body>
+
+</html>

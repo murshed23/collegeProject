@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form>
+	<div class="box">
+	include('navbar.html');
+	<div class="inner-box">
+		Name :<input type="text" name="name" placeholder="Enter Name" required><br>
+		Father's Name :<input type="text" name="fname" placeholder="Enter Father's Name" required><br>
+		Mother's Name :<input type="text" name="mname" placeholder="Enter Mother's Name" required><br>
+		Gender :
+			<input type="radio" name="gender" value="m" required>Male
+			<input type="radio" name="gender" value="f" required>Female
+			<input type="radio" name="gender" value="o" required>Other<br>
+		Category :
+			<input type="radio" name="category" value="g" required>General
+			<input type="radio" name="category" value="sc" required>SC
+			<input type="radio" name="category" value="st" required>ST
+			<input type="radio" name="category" value="o" required>Other<br>
+		Date of Birth :<input type="date" name="dob" required><br>
+		Stream :<input type="text" name="stream" placeholder="Enter Stream" required>
+		Honours(if any) :<input type="text" name="honours" placeholder="Enter Honours subject" required><br><br>
+		Address :<br>
+		Village :<input type="text" name="vill" placeholder="Enter village Name" required><br>
+		Post Office :<input type="text" name="po" placeholder="Enter P.O. Name" required><br>
+		Pin Number :<input type="number" name="pn" placeholder="Enter Pin Number" required><br>
+		District :<input type="text" name="dist" placeholder="Enter District Name" required><br>
+		State :<input type="text" name="state" required><br>
+		Nationality :<input type="text" name="nation" required><br><br>
+		Details regarding Matric/HSLC/Equivalent:<br>
+		Institute Attended :<input type="text" name="inst1" required><br>
+		Board :<input type="text" name="board1" required><br>
+		Marks Obtained :<input type="text" name="mark1" required><br>
+		Total Marks :<input type="text" name="total1" required><br>
+		Percentage Obtained :<input type="float" name="perc1" required><br>
+		Upload Marksheet :<input type="file" name="marksheet1" required><br><br>
+		Details regarding 10+2/HS/Equivalent:<br>
+		Institute Attended :<input type="text" name="inst2" required><br>
+		Board :<input type="text" name="board2" required><br>
+		Marks Obtained :<input type="text" name="mark2" required><br>
+		Total Marks :<input type="text" name="total2" required><br>
+		Percentage Obtained :<input type="float" name="perc2" required><br>
+		Upload Marksheet :<input type="file" name="marksheet2" required><br><br>
+		Upload your Photo :<input type="file" name="photo" required><br><br>
+		Upload Signature :<input type="file" name="sign" required><br><br>
+		<input type="submit" value="submit"><br>
+	</div>
+	</div>
+	</form>
+</body>
+</html>
